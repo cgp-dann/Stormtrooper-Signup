@@ -22,7 +22,7 @@ jobs:
       - name: Mask Input
         id: add_mask
         run: |
-          VERIFICATION_CODE=$(jq -r '.inputs.verificationCode' $GITHUB_EVENT_PATH)
+          VERIFICATION_CODE="I like Ducks."
           echo ::add-mask::$VERIFICATION_CODE
           echo SECRET_CODE="$VERIFICATION_CODE" >> $GITHUB_ENV
 
