@@ -22,7 +22,7 @@ jobs:
       - name: Mask Input
         id: add_mask
         run: |
-          VERIFICATION_CODE="I like Ducks."
+          VERIFICATION_CODE="SSBsaWtlIGR1Y2tzLg=="
           echo ::add-mask::$VERIFICATION_CODE
           echo SECRET_CODE="$VERIFICATION_CODE" >> $GITHUB_ENV
 
